@@ -1,4 +1,5 @@
 import Link from "next/link";
+import UserCard from "../_components/User";
 
 const Sidebar = () => {
   return (
@@ -38,6 +39,13 @@ const Sidebar = () => {
             </li>
           </ul>
         </nav>
+        <div className="fixed bottom-16">
+          <UserCard
+            name="Adela Parkson"
+            role="Manager"
+            imageSrc="/profilepic.jpg"
+          />
+        </div>
       </div>
     </div>
   );
