@@ -59,6 +59,9 @@ function Dashboard() {
               isOpen={openIndex === index}
               onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
             >
+              <p className="text-xs uppercase mb-2 text-gray-500">
+                How will this be scored?
+              </p>
               <div className="space-y-2">
                 <div className="border rounded-lg p-4 shadow-sm mb-4 text-sm">
                   <div className="flex justify-between items-center mb-2">
@@ -71,7 +74,7 @@ function Dashboard() {
                       />
                     </p>
 
-                    <button className="h-6 px-2 rounded-md border border-gray-400 bg-gray-100 text-indigo-600 hover:bg-gray-200 transition-all">
+                    <button className="h-6 px-2 rounded-md border border-gray-400 bg-gray-100 text-blue-800 hover:bg-gray-200 transition-all">
                       <FontAwesomeIcon
                         icon={faPen}
                         size="sm"
