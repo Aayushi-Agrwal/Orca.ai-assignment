@@ -2,8 +2,9 @@ import { useState } from "react";
 import BackButton from "../_components/Back";
 import Dropdown from "../_components/Dropdown";
 import Tab from "../_components/Tabs";
-import { faLock, faPen } from "@fortawesome/free-solid-svg-icons";
+import { faCaretDown, faLock, faPen } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay } from "@fortawesome/free-solid-svg-icons/faPlay";
 
 function Dashboard() {
   const content = [
@@ -98,11 +99,20 @@ function Dashboard() {
   ];
 
   return (
-    <div className="w-7/12 bg-yellow-100 mt-8">
+    <div className="w-7/12 mt-8">
       <BackButton />
-      <h1 className="text-3xl font-bold mb-6">
+      <h1 className="text-2xl font-bold my-4 text-blue-900">
         Analyse the calls for Soft Skills Coaching
       </h1>
+      <div className="text-blue-900 text-md mb-6 font-semibold">
+        <p className="flex gap-2 items-center text-sm mb-1">
+          <FontAwesomeIcon icon={faCaretDown} size="sm" /> How does it work?
+        </p>
+        <p className="flex gap-2 items-center text-sm">
+          <FontAwesomeIcon icon={faCaretDown} size="sm" /> When should you use
+          this?
+        </p>
+      </div>
       <div className="">
         <div className="mx-auto bg-white shadow-md rounded-3xl px-6 py-3">
           <Tab tabs={tabs} />
