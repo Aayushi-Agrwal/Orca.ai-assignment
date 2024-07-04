@@ -6,7 +6,7 @@ import Report from "./_layouts/Report";
 
 const Home = () => {
   return (
-    <main className="flex justify-around w-screen bg-gray-50">
+    <main className="flex absolute py-8 justify-around w-screen bg-gray-50">
       <Sidebar />
       <Dashboard />
       <Report />

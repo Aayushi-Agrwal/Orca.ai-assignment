@@ -1,52 +1,70 @@
-import Image from "next/image";
+import { faGoogleDrive, faHubspot } from "@fortawesome/free-brands-svg-icons";
+import {
+  faBell,
+  faCircleInfo,
+  faCloudArrowUp,
+  faMoon,
+  faSearch,
+  faSun,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const UploadAndIntegrations = () => {
   return (
-    <div className="bg-white p-6 rounded-3xl shadow-lg">
-      <h2 className="text-xl font-semibold mb-4">
+    <div className="bg-white p-6 rounded-3xl shadow-lg h-2/3">
+      <h2 className="text-lg font-semibold mb-4">
         Upload Videos, Audio or Transcripts
       </h2>
       <div className="space-y-4 mb-6">
-        <button className="w-full flex items-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition">
-          <img
-            src="/path/to/google-drive-logo.png"
-            alt="Google Drive"
+        <button className="w-full flex items-center justify-center h-14 bg-blue-50 rounded-lg hover:bg-blue-100 transition">
+          <FontAwesomeIcon
+            icon={faGoogleDrive}
+            size="sm"
             className="w-6 h-6 mr-3"
           />
-          <span>Upload files from Drive</span>
+
+          <span className="w-2/3 text-left text-[0.9rem]">
+            Upload files from Drive
+          </span>
         </button>
-        <button className="w-full flex items-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition">
-          <img
-            src="/path/to/computer-upload-icon.png"
-            alt="Computer Upload"
+        <button className="w-full flex items-center justify-center h-14 bg-blue-50 rounded-lg hover:bg-blue-100 transition">
+          <FontAwesomeIcon
+            icon={faCloudArrowUp}
+            size="sm"
             className="w-6 h-6 mr-3"
           />
-          <span>Upload files from this computer</span>
+          <span className="w-2/3 text-left text-[0.9rem]">
+            Upload files from this computer
+          </span>
         </button>
       </div>
-      <h2 className="text-xl font-semibold mb-4">Data Integrations</h2>
+      <h2 className="text-lg font-semibold mb-4">Data Integrations</h2>
       <div className="space-y-2">
-        <div className="flex items-center mb-2">
-          <img
-            src="/path/to/hubspot-logo.png"
-            alt="HubSpot"
-            className="w-6 h-6 mr-3"
-          />
-          <span className="font-semibold">HubSpot</span>
-          <span className="ml-2 px-2 py-1 bg-gray-200 text-gray-600 text-sm rounded">
+        <div className="flex items-center mb-2 justify-between">
+          <span className="font-semibold flex items-center">
+            <FontAwesomeIcon
+              icon={faHubspot}
+              size="sm"
+              className="w-6 h-6 mr-3"
+            />
+            HubSpot
+          </span>
+          <span className="ml-2 p-1 bg-gray-100 text-gray-600 text-xs rounded">
             CRM
           </span>
         </div>
-        <div className="space-y-1">
-          <div className="flex items-center">
+        <div className="ml-4">
+          <div className=" flex items-center my-4">
             <input type="checkbox" id="integration1" className="mr-2" />
-            <label htmlFor="integration1">
-              Some data integration I have to ask about
+            <label htmlFor="integration1" className="text-sm">
+              Some data integrations I would have to
             </label>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center my-4">
             <input type="checkbox" id="integration2" className="mr-2" />
-            <label htmlFor="integration2">Some data integration</label>
+            <label htmlFor="integration2" className="text-sm">
+              Some data integration
+            </label>
           </div>
         </div>
       </div>

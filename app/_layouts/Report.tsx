@@ -1,12 +1,14 @@
 import Navbar from "../_components/Navbar";
 import UploadAndIntegrations from "../_components/Upload";
-import UserCard from "../_components/User";
 
 function Report() {
   return (
-    <div className="w-3/12 px-4 mt-8 flex flex-col gap-12">
+    <div className="relative right-0 w-3/12 px-4 flex flex-col gap-12">
       <Navbar imageSrc="/profilepic.jpg" />
       <UploadAndIntegrations />
+      <button className="py-4 w-full bg-blue-700 rounded-2xl text-white hover:bg-blue-800 transition-all">
+        Generate Report
+      </button>
     </div>
   );
 }

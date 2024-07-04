@@ -3,8 +3,8 @@ import UserCard from "../_components/User";
 
 const Sidebar = () => {
   return (
-    <div className="w-1/6 ">
-      <div className="bg-white text-blue-900 rounded-2xl flex flex-col items-center shadow-md absolute top-8 bottom-8 left-4 px-5">
+    <div className="w-1/6 relative left-0 px-1">
+      <div className="bg-white text-blue-900 rounded-2xl flex flex-col items-center shadow-md h-full">
         <h2 className="my-8 text-2xl font-semibold mb-6">ORCA AI</h2>
         <div className="border border-gray-100 w-full"></div>
         <nav className="mt-8">
@@ -39,7 +39,7 @@ const Sidebar = () => {
             </li>
           </ul>
         </nav>
-        <div className="fixed bottom-16">
+        <div className="absolute bottom-8">
           <UserCard
             name="Adela Parkson"
             role="Manager"
