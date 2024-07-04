@@ -36,69 +36,28 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Features
-
-### 1. Loading State
-
-- The application includes a loading state to enhance user experience while data is being fetched or components are being rendered.
-
-### 2. Setup Border and Scrollbar
-
-- Borders and scrollbars are set up to ensure a clean and consistent UI design.
-- The setup section includes a bordered container with a scrollbar for improved navigation and content accessibility.
-
-### 3. Dropdown Icon
-
-- A dropdown component is implemented with a caret icon that rotates on click, indicating open or closed state.
-- Ensures only one dropdown is open at a time for better user interaction.
-
-### 4. Responsiveness
-
-- The application is fully responsive and adjusts to various screen sizes, providing a seamless experience across devices.
-
-### 5. User Profile Component
-
-- Displays user information with an avatar and user details like name and designation.
-
-### 6. Top Navigation Bar
-
-- Includes a search bar, notification icon, dark mode toggle, and user profile avatar.
-
-### 7. File Upload Section
-
-- Allows users to upload files from Google Drive or their local computer.
-- Shows available data integrations and their respective statuses.
-
 ## Future Fixes and Improvements
 
 ### 1. Enhanced Loading State
 
 - Implement more detailed loading indicators, such as spinners or skeleton screens, to further improve user experience during data fetching.
 
-### 2. Improved Dropdown Functionality
+### 2. Setup Border and Scrollbar
 
-- Add animations and transitions to the dropdown components for smoother interaction.
-- Enhance accessibility features for dropdowns, such as keyboard navigation and ARIA attributes.
+- Implement borders and scrollbars to ensure a clean and consistent UI design.
 
-### 3. Dark Mode
+### 3. Dropdown Icon
+
+- Add proper dropdown icon as shown in the sample picture.
+
+### 4. Responsiveness
+
+- Add mobile responsiveness.
+
+### 5. Dark Mode
 
 - Expand the dark mode functionality to ensure all components and pages are fully compatible.
 - Allow users to save their theme preference (light/dark) using local storage or a database.
-
-### 4. Additional Integrations
-
-- Add more data integration options, providing users with a wider range of choices for data sources.
-- Improve the UI for managing and configuring data integrations.
-
-### 5. Testing and Performance Optimization
-
-- Implement unit tests and integration tests using Jest and React Testing Library to ensure the reliability of components.
-- Optimize performance by implementing code-splitting and lazy loading for components.
-
-### 6. Documentation and Guides
-
-- Add detailed documentation for each component, including usage examples and props descriptions.
-- Create guides and tutorials to help new developers get started with the project and contribute effectively.
 
 ## Learn More
 
