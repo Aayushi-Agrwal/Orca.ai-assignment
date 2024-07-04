@@ -26,7 +26,7 @@ const Tab = ({ tabs }: { tabs: Tab[] }) => {
           ))}
         </nav>
       </div>
-      <div className="mt-4 h-[36rem] overflow-scroll ">
+      <div className="mt-4 h-[30rem] overflow-scroll ">
         {tabs[activeTab].content}
       </div>
     </div>
