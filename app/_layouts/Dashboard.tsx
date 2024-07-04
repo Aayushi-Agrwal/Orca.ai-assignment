@@ -80,7 +80,7 @@ function Dashboard() {
                     </button>
                   </div>
                   {item.questions.map((question, qIndex) => (
-                    <div key={qIndex}>
+                    <div key={qIndex} className="text-xs">
                       <p>{question}</p>
                     </div>
                   ))}
