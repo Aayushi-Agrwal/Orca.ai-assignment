@@ -78,7 +78,7 @@ function Dashboard() {
                       <FontAwesomeIcon
                         icon={faPen}
                         size="sm"
-                        className="text-indigo-600 mr-2"
+                        className="text-blue-700 mr-2"
                       />
                       Edit
                     </button>
