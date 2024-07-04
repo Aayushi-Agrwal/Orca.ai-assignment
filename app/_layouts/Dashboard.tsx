@@ -64,7 +64,7 @@ function Dashboard() {
               <div className="space-y-2">
                 <div className="border rounded-lg p-4 shadow-sm mb-4 text-sm">
                   <div className="flex justify-between items-center mb-2">
-                    <p className="text-gray-400">
+                    <p className="text-gray-400 text-xs xl:text-sm">
                       {item.subtitle}
                       <FontAwesomeIcon
                         icon={faLock}
@@ -73,11 +73,11 @@ function Dashboard() {
                       />
                     </p>
 
-                    <button className="h-6 px-2 rounded-md border border-gray-400 bg-gray-100 text-blue-800 hover:bg-gray-200 transition-all">
+                    <button className="h-6 flex justify-between items-center w-12 px-1 text-xs rounded-md border border-gray-400 bg-gray-100 text-blue-800 hover:bg-gray-200 transition-all">
                       <FontAwesomeIcon
                         icon={faPen}
                         size="sm"
-                        className="text-blue-700 mr-2"
+                        className="text-blue-700"
                       />
                       Edit
                     </button>
