@@ -101,7 +101,7 @@ function Dashboard() {
   ];
 
   return (
-    <div className="w-1/2 mt-8">
+    <div className="w-7/12 mt-8">
       <BackButton />
       <h1 className="text-2xl font-bold my-4 text-blue-900">
         Analyse the calls for Soft Skills Coaching

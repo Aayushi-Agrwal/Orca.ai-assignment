@@ -27,7 +27,7 @@ const Dropdown = ({
           <FontAwesomeIcon
             icon={faCircleUser}
             size="lg"
-            className="text-blue-700"
+            className="text-blue-800"
           />
           {title}
         </span>
