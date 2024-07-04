@@ -2,7 +2,7 @@ import { useState } from "react";
 import BackButton from "../_components/Back";
 import Dropdown from "../_components/Dropdown";
 import Tab from "../_components/Tabs";
-import { faCircleUser, faLock, faPen } from "@fortawesome/free-solid-svg-icons";
+import { faLock, faPen } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Dashboard() {
@@ -98,7 +98,7 @@ function Dashboard() {
   ];
 
   return (
-    <div className="w-7/12 bg-yellow-100">
+    <div className="w-7/12 bg-yellow-100 mt-8">
       <BackButton />
       <h1 className="text-3xl font-bold mb-6">
         Analyse the calls for Soft Skills Coaching
